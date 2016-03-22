@@ -4,7 +4,6 @@ var winner = document.getElementById('winner');
 var results = document.getElementById('results');
 leftDie.innerHTML = (Math.ceil(Math.random() * 6));
 rightDie.innerHTML = (Math.ceil(Math.random() * 6));
-
 var gameStart = document.getElementById('start_time');
 var rollBtn = document.getElementById("roll_dice");
 var tries = 1;
