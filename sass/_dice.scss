@@ -1,0 +1,62 @@
+main {
+  border: 30px solid #702307;
+  box-sizing: border-box;
+  background-color: #007000;
+  border-radius: 25%;
+  box-shadow: 0 10px 6px -6px #777;
+  width: 650px;
+  height: 350px;
+  margin: 10% auto;
+}
+
+header {
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 2%;
+}
+
+aside {
+  height: 10px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+figure {
+  border: 3px solid black;
+  border-radius: 5px;
+  background-color: #fff;
+  @include square(100px);
+  float: left;
+  margin: 7.5% 0;
+  text-align: center;
+  font-size: 3em;
+  line-height: 95px;
+}
+
+#left_die {
+  float: left;
+  margin-left: 20%;
+}
+
+#right_die {
+  float: right;
+  margin-right: 20%;
+}
+
+button {
+  margin: auto;
+  margin-bottom: 4%;
+  display: block;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 2.5em;
+  clear: both;
+}
+
+button:focus {
+  outline: 0;
+}
+
+footer {
+  text-align: center;
+}
