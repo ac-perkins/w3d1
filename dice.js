@@ -19,15 +19,15 @@ var craps = {
     (Number(leftDie.innerHTML) + Number(rightDie.innerHTML) === 11)) {
       if (tries === 1) {
         winner.innerHTML = "Winner!";
-        results.innerHTML =  "(It took you " + tries + " try and " + (parseInt(((Date.now() - craps.start) / 1000)) + " seconds)");
+        results.innerHTML =  "It took you " + tries + " try and " + (parseInt(((Date.now() - this.start) / 1000)) + " second(s)");
         tries = 1;
-        craps.start = new Date();
+        this.start = new Date();
       }
       else {
         winner.innerHTML = "Winner!";
-        results.innerHTML =  "(It took you " + tries + " tries and " + (parseInt(((Date.now() - craps.start) / 1000)) + " seconds)");
+        results.innerHTML =  "It took you " + tries + " tries and " + (parseInt(((Date.now() - this.start) / 1000)) + " second(s)");
         tries = 1;
-        craps.start = new Date();
+        this.start = new Date();
       }
     }
     else {
